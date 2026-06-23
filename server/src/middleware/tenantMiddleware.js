@@ -35,7 +35,10 @@ const tenantMiddleware = async (req, res, next) => {
 
         // Priority 4: Fallback to DEFAULT_TENANT (Crucial for local dev / unauthenticated requests)
         if (!tenantId) {
-            const defaultTenant = await Tenant.findOne({ code: 'DEFAULT' });
+            let defaultTenant = await Tenant.findOne({ code: 'DEFAULT' });
+            if (!defaultTenant) {
+                defaultTenant = await Tenant.findOne({}); // Fallback to any existing tenant
+            }
             if (defaultTenant) {
                 tenantId = defaultTenant._id;
             }
