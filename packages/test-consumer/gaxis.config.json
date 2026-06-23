@@ -1,0 +1,1 @@
+{"applicationCode":"crm-test","applicationName":"CRM Test","version":"1.0.0","type":"application","framework":"express","features":["oauth","slo"],"frontendUrl":"http://localhost:3000","backendUrl":"http://localhost:3001"}

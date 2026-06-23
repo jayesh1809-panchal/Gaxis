@@ -1,0 +1,23 @@
+{
+  "name": "gaxis-react",
+  "version": "1.0.0",
+  "description": "React SDK for G-Axis SSO",
+  "type": "module",
+  "main": "src/index.jsx",
+  "exports": {
+    ".": "./src/index.jsx"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gaxis-client-js": "file:../gaxis-client-js"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

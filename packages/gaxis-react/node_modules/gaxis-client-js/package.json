@@ -1,0 +1,18 @@
+{
+  "name": "gaxis-client-js",
+  "version": "1.0.0",
+  "description": "Vanilla JavaScript SDK for G-Axis SSO",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
